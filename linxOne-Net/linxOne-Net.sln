@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linxOne.WebApp", "linxOne.WebApp\linxOne.WebApp.csproj", "{04FA3806-2135-4A4B-862E-FDB8C24974B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linxOne.WebApp", "linxOne.WebApp\linxOne.WebApp.csproj", "{04FA3806-2135-4A4B-862E-FDB8C24974B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linxOne.Data", "linxOne.Data\linxOne.Data.csproj", "{029A0BD9-4728-43FB-9E54-F952CA110348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linxOne.Application", "linxOne.Application\linxOne.Application.csproj", "{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{04FA3806-2135-4A4B-862E-FDB8C24974B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04FA3806-2135-4A4B-862E-FDB8C24974B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04FA3806-2135-4A4B-862E-FDB8C24974B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029A0BD9-4728-43FB-9E54-F952CA110348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029A0BD9-4728-43FB-9E54-F952CA110348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029A0BD9-4728-43FB-9E54-F952CA110348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029A0BD9-4728-43FB-9E54-F952CA110348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
