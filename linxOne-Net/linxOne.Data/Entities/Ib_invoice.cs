@@ -4,7 +4,7 @@ using System.Text;
 
 namespace linxOne.Data.Entities
 {
-    class Ib_invoice
+    public class Ib_invoice
     {
         public int Ib_record_primary_key { get; set; }
         public int Ib_invoice_customer_id { get; set; }
