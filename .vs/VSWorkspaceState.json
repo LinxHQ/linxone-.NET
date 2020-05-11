@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\linxOne-Net",
+    "\\linxOne-Net\\linxOne.Data"
   ],
+  "SelectedNode": "\\linxOne-Net\\README.md",
   "PreviewInSolutionExplorer": false
 }
