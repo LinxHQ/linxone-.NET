@@ -14,6 +14,7 @@ namespace linxOne.Data.Configurations
             builder.ToTable("Ib_payments");
             builder.HasKey(x => x.Ib_record_primary_key);
             builder.Property(x => x.Ib_amount).IsRequired(true);
+            builder.HasOne(x => x.Invoice).WithMany(x => x.Invoice_Payment).HasForeignKey(x => x.Ib_invoice_id);
         }
     }
 }

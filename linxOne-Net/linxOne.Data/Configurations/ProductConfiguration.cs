@@ -13,6 +13,8 @@ namespace linxOne.Data.Configurations
         {
             builder.ToTable("Ib_products");
             builder.HasKey(x => x.Ib_record_primary_key);
+
+
             
         }
     }

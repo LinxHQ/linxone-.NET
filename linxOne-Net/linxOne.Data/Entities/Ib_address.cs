@@ -16,6 +16,7 @@ namespace linxOne.Data.Entities
         public string Ib_customer_address_state { get; set; }
         public string Ib_customer_address_website_url { get; set; }
         public string Ib_customer_id { get; set; }
+        public Ib_customer Customer { get; set; }
 
     }
 }

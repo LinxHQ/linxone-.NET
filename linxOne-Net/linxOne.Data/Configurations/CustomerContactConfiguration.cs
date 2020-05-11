@@ -15,6 +15,7 @@ namespace linxOne.Data.Configurations
             builder.HasKey(x => x.Ib_record_primary_key);
             builder.Property(x => x.Ib_customer_contact_first_name).IsRequired(true);
             builder.Property(x => x.Ib_customer_contact_last_name).IsRequired(true);
+            builder.HasOne(x => x.Customer).WithMany(x => x.Customer_Contact).HasForeignKey(x => x.Ib_customer_id);
         }
     }
 }

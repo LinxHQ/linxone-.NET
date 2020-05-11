@@ -10,5 +10,8 @@ namespace linxOne.Data.Entities
         public string Ib_customer_name { get; set; }
         public string Ib_customer_registration { get; set; }
         public string Ib_customer_type { get; set; }
+        public List<Ib_invoice> Customer_Invoice { get; set; }
+        public List<Ib_address> Customer_Address { get; set; }
+        public List<Ib_customer_contact> Customer_Contact { get; set; }
     }
 }

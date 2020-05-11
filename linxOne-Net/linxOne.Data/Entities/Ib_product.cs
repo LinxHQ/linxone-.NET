@@ -12,7 +12,7 @@ namespace linxOne.Data.Entities
         public double Ib_product_price { get; set; }
         public decimal Ib_product_tax { get; set; }
 
-
+        public List<Ib_invoice_item> Invoice_Item_Product { get; set; }
 
     }
 }

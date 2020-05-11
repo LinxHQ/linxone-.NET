@@ -13,6 +13,7 @@ namespace linxOne.Data.Configurations
         {
             builder.ToTable("Ib_invoices");
             builder.HasKey(x => x.Ib_record_primary_key);
+            builder.HasOne(x => x.Customer).WithMany(x => x.Customer_Invoice).HasForeignKey(x => x.Ib_invoice_customer_id);
 
         }
     }

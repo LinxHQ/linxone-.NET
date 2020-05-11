@@ -8,6 +8,7 @@ namespace linxOne.Data.Entities
     {
         public int Ib_record_primary_key { get; set; }
         public int Ib_invoice_customer_id { get; set; }
+        public Ib_customer Customer { get; set; }
         public DateTime Ib_invoice_date { get; set; }
         public DateTime Ib_invoice_due_date { get; set; }
         public string Ib_invoice_encode { get; set; }
@@ -19,5 +20,7 @@ namespace linxOne.Data.Entities
         public float Ib_invoice_total_after_taxes { get; set; }
         public float Ib_invoice_total_outstanding { get; set; }
         public float Ib_invoice_total_paid { get; set; }
+        public List<Ib_invoice_item> Invoice_Item_Inv { get; set; }
+        public List<Ib_payment>  Invoice_Payment { get; set; }
     }
 }

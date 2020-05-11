@@ -14,6 +14,7 @@ namespace linxOne.Data.Configurations
             builder.ToTable("Ib_addresses");
             builder.HasKey(x => x.Ib_record_primary_key);
             builder.Property(x => x.Ib_customer_address_line_1).IsRequired(true);
+            builder.HasOne(x => x.Customer).WithMany(x => x.Customer_Address).HasForeignKey(x => x.Ib_customer_id);
 
         }
     }

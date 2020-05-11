@@ -13,6 +13,7 @@ namespace linxOne.Data.Entities
         public string Ib_no { get; set; }
         public string Ib_note { get; set; }
         public int Ib_invoice_id { get; set; }
+        public Ib_invoice Invoice { get; set; }
 
     }
 }
