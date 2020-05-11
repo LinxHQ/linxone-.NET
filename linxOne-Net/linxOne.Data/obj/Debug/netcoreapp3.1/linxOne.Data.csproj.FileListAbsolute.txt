@@ -7,6 +7,5 @@ E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\bin\Debug\netcoreapp3.1\lin
 E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\bin\Debug\netcoreapp3.1\linxOne.Data.runtimeconfig.dev.json
 E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.genruntimeconfig.cache
 E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\bin\Debug\netcoreapp3.1\linxOne.Data.pdb
-E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.csproj.CoreCompileInputs.cache
 E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.dll
 E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.pdb
