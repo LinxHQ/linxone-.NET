@@ -9,3 +9,4 @@ E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\lin
 E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\bin\Debug\netcoreapp3.1\linxOne.Data.pdb
 E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.dll
 E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.pdb
+E:\LinxOne-Net\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.csproj.CoreCompileInputs.cache

@@ -8,7 +8,7 @@ using System.Text;
 
 namespace linxOne.Data.EF
 {
-  public  class linxOneDbContextFactory : IDesignTimeDbContextFactory<linxOneDbContext>
+    public class linxOneDbContextFactory : IDesignTimeDbContextFactory<linxOneDbContext>
     {
         public linxOneDbContext CreateDbContext(string[] args)
         {
@@ -18,15 +18,11 @@ namespace linxOne.Data.EF
               .AddJsonFile("appsettings.json")
               .Build();
             // ....................
-
-
-
-
-
+            var connectionString = configuration.GetConnectionString("linxOneDb");
             var optionsBuilder = new DbContextOptionsBuilder<linxOneDbContext>();
-            optionsBuilder.UseSqlServer("Data Source=blog.db");
+            optionsBuilder.UseSqlServer(connectionString);
 
             return new linxOneDbContext(optionsBuilder.Options);
         }
     }
-} 
+}
