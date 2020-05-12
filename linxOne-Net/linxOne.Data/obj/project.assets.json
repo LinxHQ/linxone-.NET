@@ -5092,11 +5092,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\LinxOne-Net\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
+      "projectUniqueName": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
       "projectName": "linxOne.Data",
-      "projectPath": "E:\\LinxOne-Net\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
+      "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
       "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
-      "outputPath": "E:\\LinxOne-Net\\linxone-.NET\\linxOne-Net\\linxOne.Data\\obj\\",
+      "outputPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

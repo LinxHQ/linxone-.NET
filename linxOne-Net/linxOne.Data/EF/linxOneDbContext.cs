@@ -1,5 +1,6 @@
 ﻿using linxOne.Data.Configurations;
 using linxOne.Data.Entities;
+using linxOne.Data.InstallDefault;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace linxOne.Data.EF
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // configurations
             modelBuilder.ApplyConfiguration(new AddressConfiguration());
             modelBuilder.ApplyConfiguration(new TaxConfiguration());
             modelBuilder.ApplyConfiguration(new CustomerConfiguration());
@@ -29,6 +31,9 @@ namespace linxOne.Data.EF
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
 
             // base.OnModelCreating(modelBuilder);
+            //data seeding
+            modelBuilder.Seed();
+              
         }
 
         public DbSet<Ib_address> Ib_addresses { get; set; }

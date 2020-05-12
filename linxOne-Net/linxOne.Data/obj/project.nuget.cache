@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MxzwCFXv5pvHzAZHd+xpDLWiqeqVvPS9s7qEej8s6J5q110XoSMMSAzXT8/BuqYW9/Q4ixFfJlH1WoPx5H9QcQ==",
+  "dgSpecHash": "kgZDNsD2lKyJIAptDdlQJRsn5PmOB2XOvJdaVWJJEl0eyHpH3qd+Zil54ZGVQzVNUtrfoF1SMfgi0R7FSgk+oQ==",
   "success": true,
-  "projectFilePath": "E:\\LinxOne-Net\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
+  "projectFilePath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
