@@ -7,17 +7,17 @@ using System.Text;
 
 namespace linxOne.Data.EF
 {
-    class linxOneDbContext :DbContext 
+    public class linxOneDbContext : DbContext
     {
-        public linxOneDbContext(DbContextOptions options) :base(options)
+        public linxOneDbContext(DbContextOptions options) : base(options)
         {
-            
+
 
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new AddressConfiguration()); 
-            modelBuilder.ApplyConfiguration(new TaxConfiguration()); 
+            modelBuilder.ApplyConfiguration(new AddressConfiguration());
+            modelBuilder.ApplyConfiguration(new TaxConfiguration());
             modelBuilder.ApplyConfiguration(new CustomerConfiguration());
             modelBuilder.ApplyConfiguration(new CustomerContactConfiguration());
             modelBuilder.ApplyConfiguration(new AccountConfiguration());
@@ -28,7 +28,7 @@ namespace linxOne.Data.EF
             modelBuilder.ApplyConfiguration(new InvoiceItemConfiguration());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
 
-           // base.OnModelCreating(modelBuilder);
+            // base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Ib_address> Ib_addresses { get; set; }
