@@ -16,6 +16,7 @@ namespace linxOne.Data.Entities
         public string Ib_customer_contact_note { get; set; }
         public string Ib_customer_contact_office_fax { get; set; }
         public string Ib_customer_contact_office_phone { get; set; }
+        public Guid UseId { get; set; }
         public int Ib_customer_id { get; set; }
         public Ib_customer Customer { get; set; }
     }

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using linxOne.Data.EF;
 
 namespace linxOne.Data.Migrations
 {
     [DbContext(typeof(linxOneDbContext))]
-    partial class linxOneDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200514020227_identitydatabase")]
+    partial class identitydatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,13 +94,6 @@ namespace linxOne.Data.Migrations
                     b.HasKey("UserId", "RoleId");
 
                     b.ToTable("AUserRole");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = new Guid("15d7be41-a49e-4660-82f7-788436d65916"),
-                            RoleId = new Guid("15d7be41-a49e-4660-82f7-788436d65916")
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
@@ -143,16 +138,6 @@ namespace linxOne.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ARoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("9202e66e-3de0-4035-ae69-8850c87ab05a"),
-                            ConcurrencyStamp = "1f9b3efc-28bc-48d8-9131-cd36cdd7817e",
-                            Descriptions = "Administrator role",
-                            Name = "admin",
-                            NormalizedName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("linxOne.Data.Entities.AUser", b =>
@@ -216,27 +201,6 @@ namespace linxOne.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AUser");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("15d7be41-a49e-4660-82f7-788436d65916"),
-                            AccessFailedCount = 0,
-                            Birth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(1983),
-                            ConcurrencyStamp = "95918779-225e-4120-b94c-3eb98b9341d8",
-                            Email = "admin@admin.com",
-                            EmailConfirmed = true,
-                            FirstName = "david",
-                            LastName = "silva",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "admin@admin.com",
-                            NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEH5JiMDRINod2kxtVewlbxkt45uNVn6dAZ1Il93XJEHPxNluA7DqBIZGs4yr1ZRiYw==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "",
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("linxOne.Data.Entities.Ib_account", b =>
