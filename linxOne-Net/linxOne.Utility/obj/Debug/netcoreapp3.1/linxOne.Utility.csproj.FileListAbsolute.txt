@@ -1,0 +1,8 @@
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Utility\bin\Debug\netcoreapp3.1\linxOne.Utility.deps.json
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Utility\bin\Debug\netcoreapp3.1\linxOne.Utility.dll
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Utility\bin\Debug\netcoreapp3.1\linxOne.Utility.pdb
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Utility\obj\Debug\netcoreapp3.1\linxOne.Utility.csproj.CoreCompileInputs.cache
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Utility\obj\Debug\netcoreapp3.1\linxOne.Utility.AssemblyInfoInputs.cache
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Utility\obj\Debug\netcoreapp3.1\linxOne.Utility.AssemblyInfo.cs
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Utility\obj\Debug\netcoreapp3.1\linxOne.Utility.dll
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Utility\obj\Debug\netcoreapp3.1\linxOne.Utility.pdb
