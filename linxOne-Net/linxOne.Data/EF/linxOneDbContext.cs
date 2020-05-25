@@ -10,7 +10,7 @@ using System.Text;
 
 namespace linxOne.Data.EF
 {
-    public class linxOneDbContext : IdentityDbContext<Ib_customer,ARoles,Guid>
+    public class linxOneDbContext : IdentityDbContext<AUser,ARoles,Guid>
     {
         public linxOneDbContext(DbContextOptions options) : base(options)
         {
