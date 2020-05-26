@@ -1,20 +1,15 @@
-﻿using linxOne.Application.Address.DataTransferObject;
-using linxOne.Data.EF;
+﻿using linxOne.Data.EF;
 using linxOne.Data.Entities;
 using linxOne.Utility.Exceptions;
+using linxOne.ViewModel.Address.DataTransferObject;
+using linxOne.ViewModel.Common;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace linxOne.Application.Address
 {
-    class ManageAddressService : IAddressService
+    public class ManageAddressService : IAddressService
     {
         private readonly linxOneDbContext db;
         public ManageAddressService(linxOneDbContext context)
@@ -59,7 +54,7 @@ namespace linxOne.Application.Address
 
         }
 
-        
+
 
         public async Task<PageViewModel<AddressViewRequest>> GetAllPaging(GetAddressPagingRequest request)
         {
@@ -100,7 +95,7 @@ namespace linxOne.Application.Address
         {
             var a = await db.Ib_addresses.FindAsync(request.Ib_record_primary_key);
             if (a == null) throw new LinxOneException($"Cannot find an address with id{request.Ib_record_primary_key}");
-           
+
             var adderss = new Ib_address()
             {
 

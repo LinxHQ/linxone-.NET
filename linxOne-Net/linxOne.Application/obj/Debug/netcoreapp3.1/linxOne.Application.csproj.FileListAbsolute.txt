@@ -19,3 +19,7 @@ E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Application\obj\Debug\netco
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Application\bin\Debug\netcoreapp3.1\linxOne.Data.dll
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Application\bin\Debug\netcoreapp3.1\linxOne.Data.pdb
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Application\obj\Debug\netcoreapp3.1\linxOne.Application.csproj.CopyComplete
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Application\bin\Debug\netcoreapp3.1\linxOne.Utility.dll
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Application\bin\Debug\netcoreapp3.1\linxOne.ViewModels.dll
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Application\bin\Debug\netcoreapp3.1\linxOne.Utility.pdb
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.Application\bin\Debug\netcoreapp3.1\linxOne.ViewModels.pdb
