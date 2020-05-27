@@ -5,9 +5,23 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linxOne.WebApp", "linxOne.WebApp\linxOne.WebApp.csproj", "{04FA3806-2135-4A4B-862E-FDB8C24974B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linxOne.Data", "linxOne.Data\linxOne.Data.csproj", "{029A0BD9-4728-43FB-9E54-F952CA110348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linxOne.Data", "linxOne.Data\linxOne.Data.csproj", "{029A0BD9-4728-43FB-9E54-F952CA110348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linxOne.Application", "linxOne.Application\linxOne.Application.csproj", "{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linxOne.Application", "linxOne.Application\linxOne.Application.csproj", "{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linxOne.Utility", "linxOne.Utility\linxOne.Utility.csproj", "{9301C4BF-A0D3-4CB6-A0CE-62C7F6F1F97F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.solution item", "0.solution item", "{B5A40F1B-9FCA-4EDB-BB65-9235B6C16A5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. frastructure", "1. frastructure", "{B734BBA8-95C7-4C80-A1A9-0479703309A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.domain", "2.domain", "{92E92A68-5ED8-48C9-922B-3E473031D91D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.host", "3.host", "{97FC3442-BCF5-4AE5-BA1B-AB83F16C625D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linxOne.ViewModels", "linxOne.ViewModels\linxOne.ViewModels.csproj", "{E70098EC-38B2-4DF0-9A41-767771BCAD57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linxOne.BackendApi", "linxOne.BackendApi\linxOne.BackendApi.csproj", "{BC7BC77C-4741-4090-A12C-5CBC16389661}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +41,18 @@ Global
 		{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9301C4BF-A0D3-4CB6-A0CE-62C7F6F1F97F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9301C4BF-A0D3-4CB6-A0CE-62C7F6F1F97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9301C4BF-A0D3-4CB6-A0CE-62C7F6F1F97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9301C4BF-A0D3-4CB6-A0CE-62C7F6F1F97F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E70098EC-38B2-4DF0-9A41-767771BCAD57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70098EC-38B2-4DF0-9A41-767771BCAD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70098EC-38B2-4DF0-9A41-767771BCAD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70098EC-38B2-4DF0-9A41-767771BCAD57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC7BC77C-4741-4090-A12C-5CBC16389661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7BC77C-4741-4090-A12C-5CBC16389661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7BC77C-4741-4090-A12C-5CBC16389661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7BC77C-4741-4090-A12C-5CBC16389661}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Account\" />
+    <Folder Include="Product\" />
+    <Folder Include="Tax\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\linxOne.Data\linxOne.Data.csproj" />
+    <ProjectReference Include="..\linxOne.Utility\linxOne.Utility.csproj" />
+    <ProjectReference Include="..\linxOne.ViewModels\linxOne.ViewModels.csproj" />
+  </ItemGroup>
 
 </Project>
  
