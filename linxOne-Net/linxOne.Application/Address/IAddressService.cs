@@ -1,7 +1,5 @@
-﻿using linxOne.Application.Address.DataTransferObject;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using linxOne.ViewModel.Address.DataTransferObject;
+using linxOne.ViewModel.Common;
 using System.Threading.Tasks;
 
 namespace linxOne.Application.Address
