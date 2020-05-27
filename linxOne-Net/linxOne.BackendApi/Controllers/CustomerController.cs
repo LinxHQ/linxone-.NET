@@ -17,6 +17,7 @@ namespace linxOne.BackendApi.Controllers
         {
             _customerService = customerService;
         }
+        [HttpGet]
         public async Task<IActionResult> GetAll()
         {
 

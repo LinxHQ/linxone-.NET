@@ -101,8 +101,6 @@ E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcor
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.csproj.CoreCompileInputs.cache
-E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.MvcApplicationPartsAssemblyInfo.cache
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.Views.pdb
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.csproj.CopyComplete
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.dll
@@ -160,3 +158,10 @@ E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcor
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\linxOne.Data.pdb
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\linxOne.Utility.pdb
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\linxOne.ViewModels.pdb
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.csproj.CoreCompileInputs.cache
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.MvcApplicationPartsAssemblyInfo.cs
+E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.MvcApplicationPartsAssemblyInfo.cache
