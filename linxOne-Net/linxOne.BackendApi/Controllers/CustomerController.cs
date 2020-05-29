@@ -25,5 +25,44 @@ namespace linxOne.BackendApi.Controllers
             return Ok(cus);
 
         }
+        [HttpGet("cus/address")]
+        public async Task<IActionResult> GetCustomerAddressByCustomerId(int id)
+        {
+            var data = await _customerService.GetCustomerAddressByCustomerId(id);
+
+
+            return Ok(data);
+        }
+
+        [HttpGet("cus/contact")]
+        public async Task<IActionResult> GetCustomerContactByCustomerId(int id)
+        {
+            var data = await _customerService.GetCustomerContactByCustomerId(id);
+            if (data == null)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                return Ok(data);
+
+            }
+
+        }
+        [HttpGet("cus/invoice")]
+        public async Task<IActionResult> GetCustomerInvoiceByCustomerId(int id)
+        {
+            var data = await _customerService.GetCustomerInvoiceCustomerId(id);
+            if (data == null)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                return Ok(data);
+
+            }
+
+        }
     }
 }

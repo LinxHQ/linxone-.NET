@@ -19,9 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.domain", "2.domain", "{92
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.host", "3.host", "{97FC3442-BCF5-4AE5-BA1B-AB83F16C625D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linxOne.ViewModels", "linxOne.ViewModels\linxOne.ViewModels.csproj", "{E70098EC-38B2-4DF0-9A41-767771BCAD57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linxOne.ViewModels", "linxOne.ViewModels\linxOne.ViewModels.csproj", "{E70098EC-38B2-4DF0-9A41-767771BCAD57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linxOne.BackendApi", "linxOne.BackendApi\linxOne.BackendApi.csproj", "{BC7BC77C-4741-4090-A12C-5CBC16389661}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linxOne.BackendApi", "linxOne.BackendApi\linxOne.BackendApi.csproj", "{BC7BC77C-4741-4090-A12C-5CBC16389661}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +56,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04FA3806-2135-4A4B-862E-FDB8C24974B6} = {97FC3442-BCF5-4AE5-BA1B-AB83F16C625D}
+		{029A0BD9-4728-43FB-9E54-F952CA110348} = {92E92A68-5ED8-48C9-922B-3E473031D91D}
+		{B3D41A44-ABF1-4E72-8F48-6B3D8361F7EA} = {92E92A68-5ED8-48C9-922B-3E473031D91D}
+		{9301C4BF-A0D3-4CB6-A0CE-62C7F6F1F97F} = {B734BBA8-95C7-4C80-A1A9-0479703309A0}
+		{E70098EC-38B2-4DF0-9A41-767771BCAD57} = {B734BBA8-95C7-4C80-A1A9-0479703309A0}
+		{BC7BC77C-4741-4090-A12C-5CBC16389661} = {97FC3442-BCF5-4AE5-BA1B-AB83F16C625D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {424614A6-BA60-4BA0-A2E0-EBEA651718A1}
