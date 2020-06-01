@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DCEcCLKb2M7J/yZf0LozHBh2OB96C8YTdwMdleFdq/27fP7ozBe/WPmVfRp5Bf4gqyVAY50lcbLx+wtGwtJwNg==",
+  "dgSpecHash": "Watqrf1D+WzV6rLZcG1YxrAYvR4A2MhrHEQ6GBXZZo6TAQV3PAguPn5NOg9XEEctlvOvUAl7pRYra+O1v2zoLg==",
   "success": true,
-  "projectFilePath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj",
+  "projectFilePath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.4\\microsoft.aspnetcore.cryptography.internal.3.1.4.nupkg.sha512",
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.4\\microsoft.aspnetcore.cryptography.keyderivation.3.1.4.nupkg.sha512",
