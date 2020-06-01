@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj": {}
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj": {}
   },
   "projects": {
-    "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj": {
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj",
+        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj",
         "projectName": "linxOne.Application",
-        "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj",
+        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj",
         "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
-        "outputPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\obj\\",
+        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,14 +30,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
-                "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj"
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj"
               },
-              "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj": {
-                "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj"
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj"
               },
-              "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj": {
-                "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj"
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj": {
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj",
+        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj",
         "projectName": "linxOne.BackendApi",
-        "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj",
+        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj",
         "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
-        "outputPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\obj\\",
+        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -95,17 +95,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj": {
-                "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj"
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Application\\linxOne.Application.csproj"
               },
-              "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
-                "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj"
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj"
               },
-              "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj": {
-                "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj"
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj"
               },
-              "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj": {
-                "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj"
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj"
               }
             }
           }
@@ -150,14 +150,14 @@
         }
       }
     },
-    "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
+        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
         "projectName": "linxOne.Data",
-        "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
+        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
         "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
-        "outputPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\obj\\",
+        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -235,14 +235,14 @@
         }
       }
     },
-    "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj": {
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj",
+        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj",
         "projectName": "linxOne.Utility",
-        "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj",
+        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj",
         "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
-        "outputPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\obj\\",
+        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -290,14 +290,14 @@
         }
       }
     },
-    "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj": {
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj",
+        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj",
         "projectName": "linxOne.ViewModels",
-        "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj",
+        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj",
         "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
-        "outputPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\obj\\",
+        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -316,8 +316,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
-                "projectPath": "E:\\LinxOne_12052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj"
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj"
               }
             }
           }

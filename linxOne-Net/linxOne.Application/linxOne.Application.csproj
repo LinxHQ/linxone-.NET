@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Account\" />
+    <Folder Include="Contact\" />
     <Folder Include="Product\" />
     <Folder Include="Tax\" />
   </ItemGroup>

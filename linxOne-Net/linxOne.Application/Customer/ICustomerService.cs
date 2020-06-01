@@ -1,5 +1,8 @@
-﻿using linxOne.ViewModel.Common;
+﻿using linxOne.ViewModel.Address.DataTransferObject;
+using linxOne.ViewModel.Common;
+using linxOne.ViewModels.Contact.DataTransferObject;
 using linxOne.ViewModels.Customer.DataTransferObject;
+using linxOne.ViewModels.Invoice.DatatransferObject;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,6 +18,10 @@ namespace linxOne.Application.Customer
         Task<PageViewModel<CustomerViewRequest>> GetAllPaging(GetCustomerPagingRequest request);
 
         Task<List<CustomerViewRequest>> GetAll();
+        Task<List<AddressViewRequest>> GetCustomerAddressByCustomerId(int id);
+        Task<List<ContactViewRequest>> GetCustomerContactByCustomerId(int id);
+        Task<List<InvoiceViewRequest>> GetCustomerInvoiceCustomerId(int id);
+
 
         //business for Client.
 
