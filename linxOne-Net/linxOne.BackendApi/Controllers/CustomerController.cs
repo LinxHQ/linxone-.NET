@@ -64,5 +64,17 @@ namespace linxOne.BackendApi.Controllers
             }
 
         }
+        [HttpPost]
+        public async Task<IActionResult> CreateCustomer()
+        {
+
+            return null;
+        }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteCustomer()
+        {
+
+            return null;
+        }
     }
 }
