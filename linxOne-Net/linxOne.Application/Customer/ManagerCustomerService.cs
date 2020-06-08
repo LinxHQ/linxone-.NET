@@ -9,6 +9,7 @@ using linxOne.ViewModels.Invoice.DatatransferObject;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,10 +67,9 @@ namespace linxOne.Application.Customer
 
             };
             db.Ib_customers.Add(cus);
-            return await db.SaveChangesAsync();
+             await db.SaveChangesAsync();
+            return cus.Ib_record_primary_key;
         }
-
-
 
         public async Task<int> Delete(int customerId)
         {
@@ -95,9 +95,35 @@ namespace linxOne.Application.Customer
             return data;
         }
 
-        public Task<PageViewModel<CustomerViewRequest>> GetAllPaging(GetCustomerPagingRequest request)
+        public async Task<PageViewModel<CustomerViewRequest>> GetAllPaging(GetCustomerPagingRequest request)
         {
-            throw new NotImplementedException();
+            var quey = from c in db.Ib_customers
+                       select c;
+            if (!string.IsNullOrEmpty(request.keyword))
+            {
+                quey = quey.Where(x => x.Ib_customer_name.ToLower().Contains(request.keyword));
+            }
+            int totalRow = await quey.CountAsync();
+            var data = await quey.Skip((request.pageIndex - 1) * request.pageSize)
+                .Take(request.pageSize).Select(c => new CustomerViewRequest()
+                {
+
+                    id = c.Ib_record_primary_key,
+                    name = c.Ib_customer_name,
+                    registration = c.Ib_customer_registration,
+                    cus_type = c.Ib_customer_type
+
+
+                }).ToListAsync();
+
+            //
+            var pageViewModel = new PageViewModel<CustomerViewRequest>()
+            {
+                TotalRecord = totalRow,
+                Items = data
+
+            };
+            return pageViewModel;
         }
 
         public async Task<List<AddressViewRequest>> GetCustomerAddressByCustomerId(int id)
@@ -130,6 +156,24 @@ namespace linxOne.Application.Customer
                 //cus_type=x.c.Ib_customer_type
             }).ToListAsync();
             return data;
+        }
+
+        public async Task<CustomerViewRequest> GetCustomerById(int id)
+        {
+
+            var   query =  from c in db.Ib_customers
+                        where c.Ib_record_primary_key==id
+                        select new { c };
+
+            var data = await query.Select(x => new CustomerViewRequest()
+            {
+                id = x.c.Ib_record_primary_key,
+                name = x.c.Ib_customer_name,
+                registration=x.c.Ib_customer_registration,
+                cus_type=x.c.Ib_customer_type
+            }).FirstOrDefaultAsync();
+            return  data;
+
         }
 
         public async Task<List<ContactViewRequest>> GetCustomerContactByCustomerId(int id)
@@ -186,9 +230,17 @@ namespace linxOne.Application.Customer
             return data;
         }
 
-        public Task<int> Update(CustomerUpdateRequest request)
+        public async Task<int> Update(CustomerUpdateRequest request)
         {
-            throw new NotImplementedException();
+            var cus = await db.Ib_customers.FindAsync(request.Ib_record_primary_key);
+            if (cus == null)
+            {
+                throw new LinxOneException($"Cannot find a customer :{request.Ib_record_primary_key}");
+            }
+            cus.Ib_customer_name = request.Ib_customer_name;
+            cus.Ib_customer_registration = request.Ib_customer_registration;
+            cus.Ib_customer_type = request.Ib_customer_type;
+            return await db.SaveChangesAsync();
         }
 
     }

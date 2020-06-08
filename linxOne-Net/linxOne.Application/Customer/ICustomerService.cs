@@ -16,7 +16,7 @@ namespace linxOne.Application.Customer
         Task<int> Update(CustomerUpdateRequest request);
         Task<int> Delete(int customerId);
         Task<PageViewModel<CustomerViewRequest>> GetAllPaging(GetCustomerPagingRequest request);
-
+        Task<CustomerViewRequest> GetCustomerById(int id);
         Task<List<CustomerViewRequest>> GetAll();
         Task<List<AddressViewRequest>> GetCustomerAddressByCustomerId(int id);
         Task<List<ContactViewRequest>> GetCustomerContactByCustomerId(int id);

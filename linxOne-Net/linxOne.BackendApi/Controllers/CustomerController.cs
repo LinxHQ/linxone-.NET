@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using linxOne.Application.Customer;
+using linxOne.ViewModels.Customer.DataTransferObject;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,6 +23,18 @@ namespace linxOne.BackendApi.Controllers
         {
 
             var cus = await _customerService.GetAll();
+            return Ok(cus);
+
+        }
+        [HttpGet("cus-paging")]
+        public async Task<IActionResult> GetAllPaging([FromForm]GetCustomerPagingRequest request)
+        {
+
+            var cus = await _customerService.GetAllPaging(request);
+            if (cus==null)
+            {
+                return BadRequest();
+            }
             return Ok(cus);
 
         }
@@ -64,17 +77,59 @@ namespace linxOne.BackendApi.Controllers
             }
 
         }
-        [HttpPost]
-        public async Task<IActionResult> CreateCustomer()
-        {
 
-            return null;
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCustomerById(int id)
+        {
+            var cus = await _customerService.GetCustomerById(id);
+            if (cus==null)
+            {
+                return BadRequest($"Cannot find Customer with id :{id}");
+            }
+            return Ok(cus);
         }
-        [HttpDelete]
-        public async Task<IActionResult> DeleteCustomer()
+
+
+        [HttpPost]
+        public async Task<IActionResult> CreateCustomer([FromForm]CustomerCreateRequest request)
+        {
+            var CusId = await _customerService.Create(request);
+            if (CusId == 0)
+            {
+                return BadRequest();
+
+            }
+
+            var cus = await _customerService.GetCustomerById(CusId);
+            return CreatedAtAction(nameof(GetCustomerById),new { CusId }, cus);
+        }
+
+
+        [HttpPut]
+        public async Task<IActionResult> Update([FromForm] CustomerUpdateRequest request)
+        {
+            var result  = await _customerService.Update(request);
+            if (result == 0)
+            {
+                return BadRequest();
+
+            }
+            return Ok();
+        }  
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCustomer(int id)
         {
 
-            return null;
+            var result = await _customerService.Delete(id);
+            if (result == 0)
+            {
+                return BadRequest();
+
+            }
+            return Ok();
         }
     }
 }
