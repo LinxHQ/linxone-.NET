@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using linxOne.Application.Customer;
 using linxOne.ViewModels.Customer.DataTransferObject;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,7 @@ namespace linxOne.BackendApi.Controllers
             _customerService = customerService;
         }
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAll()
         {
 
@@ -26,18 +28,20 @@ namespace linxOne.BackendApi.Controllers
             return Ok(cus);
 
         }
+
         [HttpGet("cus-paging")]
         public async Task<IActionResult> GetAllPaging([FromForm]GetCustomerPagingRequest request)
         {
 
             var cus = await _customerService.GetAllPaging(request);
-            if (cus==null)
+            if (cus == null)
             {
                 return BadRequest();
             }
             return Ok(cus);
 
         }
+
         [HttpGet("cus/address")]
         public async Task<IActionResult> GetCustomerAddressByCustomerId(int id)
         {
@@ -62,6 +66,7 @@ namespace linxOne.BackendApi.Controllers
             }
 
         }
+
         [HttpGet("cus/invoice")]
         public async Task<IActionResult> GetCustomerInvoiceByCustomerId(int id)
         {
@@ -78,18 +83,16 @@ namespace linxOne.BackendApi.Controllers
 
         }
 
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCustomerById(int id)
         {
             var cus = await _customerService.GetCustomerById(id);
-            if (cus==null)
+            if (cus == null)
             {
                 return BadRequest($"Cannot find Customer with id :{id}");
             }
             return Ok(cus);
         }
-
 
         [HttpPost]
         public async Task<IActionResult> CreateCustomer([FromForm]CustomerCreateRequest request)
@@ -102,22 +105,20 @@ namespace linxOne.BackendApi.Controllers
             }
 
             var cus = await _customerService.GetCustomerById(CusId);
-            return CreatedAtAction(nameof(GetCustomerById),new { CusId }, cus);
+            return CreatedAtAction(nameof(GetCustomerById), new { CusId }, cus);
         }
-
 
         [HttpPut]
         public async Task<IActionResult> Update([FromForm] CustomerUpdateRequest request)
         {
-            var result  = await _customerService.Update(request);
+            var result = await _customerService.Update(request);
             if (result == 0)
             {
                 return BadRequest();
 
             }
             return Ok();
-        }  
-
+        }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCustomer(int id)

@@ -12,6 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.6.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\linxOne.Data\linxOne.Data.csproj" />
     <ProjectReference Include="..\linxOne.Utility\linxOne.Utility.csproj" />
     <ProjectReference Include="..\linxOne.ViewModels\linxOne.ViewModels.csproj" />

@@ -306,9 +306,6 @@ E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcor
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\linxOne.Utility.pdb
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\linxOne.ViewModels.pdb
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.csprojAssemblyReference.cache
-E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.csproj.CoreCompileInputs.cache
-E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.MvcApplicationPartsAssemblyInfo.cs
-E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.MvcApplicationPartsAssemblyInfo.cache
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.RazorAssemblyInfo.cache
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.RazorAssemblyInfo.cs
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.AssemblyInfoInputs.cache
@@ -332,3 +329,14 @@ E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcor
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.pdb
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.genruntimeconfig.cache
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.csproj.CoreCompileInputs.cache
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.MvcApplicationPartsAssemblyInfo.cs
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.MvcApplicationPartsAssemblyInfo.cache
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.dll
