@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GL36v1tvnzZBVTlUn53uXEoutpkqjY7TyXpMe2JzChpFNpQ7p6V+MABv8oYPNIfABW4KPST6v/h5zsyGVrhTSQ==",
+  "dgSpecHash": "zovq/Z5aK+8I2I5+8ZLLliVOXioZl4i6ekjM4pLn72tByy3LZApghtM/SHC/kOSvLWwtpLM2pTvB0L2giysrnw==",
   "success": true,
   "projectFilePath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\phongnv\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.4\\microsoft.aspnetcore.cryptography.internal.3.1.4.nupkg.sha512",
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.4\\microsoft.aspnetcore.cryptography.keyderivation.3.1.4.nupkg.sha512",
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.4\\microsoft.aspnetcore.http.features.3.1.4.nupkg.sha512",
