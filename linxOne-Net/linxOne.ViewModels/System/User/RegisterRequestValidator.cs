@@ -29,10 +29,10 @@ namespace linxOne.ViewModels.System.User
 
             RuleFor(x => x.Password).NotEmpty().WithMessage("Password is required")
                 .MinimumLength(6).WithMessage("Password is at least 6 characters")
-                .MaximumLength(20).WithMessage("Password is Maximum 20 characters")
-                .Matches(@"^(?=.*\d)(?=.*[a - z])(?=.*[A - Z]).{ 6,20}$")
-                .WithMessage("Password which contain at least one numeric digit, one uppercase and one lowercase letter");
-
+                .Matches("[A-Z]").WithMessage("PasswordUppercaseLetter")
+                .Matches("[a-z]").WithMessage("PasswordLowercaseLetter")
+                .Matches("[0-9]").WithMessage("PasswordNumberDigit")
+                .Matches("[!@#$%&*]").WithMessage("PasswordSpecialCharacter(!@#$%&*)");
 
             RuleFor(x => x).Custom((request, context) =>
             {

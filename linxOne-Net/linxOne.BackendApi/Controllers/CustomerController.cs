@@ -12,6 +12,7 @@ namespace linxOne.BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _customerService;
@@ -52,6 +53,7 @@ namespace linxOne.BackendApi.Controllers
         }
 
         [HttpGet("cus/contact")]
+        [Authorize]
         public async Task<IActionResult> GetCustomerContactByCustomerId(int id)
         {
             var data = await _customerService.GetCustomerContactByCustomerId(id);
