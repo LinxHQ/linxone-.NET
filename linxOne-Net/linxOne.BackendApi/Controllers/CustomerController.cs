@@ -30,8 +30,8 @@ namespace linxOne.BackendApi.Controllers
 
         }
 
-        [HttpGet("cus-paging")]
-        public async Task<IActionResult> GetAllPaging([FromForm]GetCustomerPagingRequest request)
+        [HttpGet("paging")]
+        public async Task<IActionResult> GetAllPaging([FromQuery]GetCustomerPagingRequest request)
         {
 
             var cus = await _customerService.GetAllPaging(request);
@@ -43,7 +43,7 @@ namespace linxOne.BackendApi.Controllers
 
         }
 
-        [HttpGet("cus/address")]
+        [HttpGet("address")]
         public async Task<IActionResult> GetCustomerAddressByCustomerId(int id)
         {
             var data = await _customerService.GetCustomerAddressByCustomerId(id);
@@ -52,7 +52,7 @@ namespace linxOne.BackendApi.Controllers
             return Ok(data);
         }
 
-        [HttpGet("cus/contact")]
+        [HttpGet("contact")]
         [Authorize]
         public async Task<IActionResult> GetCustomerContactByCustomerId(int id)
         {
@@ -69,7 +69,7 @@ namespace linxOne.BackendApi.Controllers
 
         }
 
-        [HttpGet("cus/invoice")]
+        [HttpGet("invoice")]
         public async Task<IActionResult> GetCustomerInvoiceByCustomerId(int id)
         {
             var data = await _customerService.GetCustomerInvoiceCustomerId(id);

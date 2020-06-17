@@ -45,6 +45,7 @@ namespace linxOne.BackendApi
             services.AddTransient<SignInManager<AUser>, SignInManager<AUser>>();
             services.AddTransient<RoleManager<ARoles>, RoleManager<ARoles>>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ICustomerService, ManagerCustomerService>();
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             //services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
 

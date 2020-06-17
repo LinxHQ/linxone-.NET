@@ -4,14 +4,14 @@
     "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.WebApp\\linxOne.WebApp.csproj": {}
   },
   "projects": {
-    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.WebApp\\linxOne.WebApp.csproj": {
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.WebApp\\linxOne.WebApp.csproj",
-        "projectName": "linxOne.WebApp",
-        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.WebApp\\linxOne.WebApp.csproj",
+        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
+        "projectName": "linxOne.Data",
+        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj",
         "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
-        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.WebApp\\obj\\",
+        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +40,244 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj",
+        "projectName": "linxOne.Utility",
+        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj",
+        "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
+        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phongnv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj",
+        "projectName": "linxOne.ViewModels",
+        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
+        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phongnv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Data\\linxOne.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.WebApp\\linxOne.WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.WebApp\\linxOne.WebApp.csproj",
+        "projectName": "linxOne.WebApp",
+        "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.WebApp\\linxOne.WebApp.csproj",
+        "packagesPath": "C:\\Users\\phongnv\\.nuget\\packages\\",
+        "outputPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phongnv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.Utility\\linxOne.Utility.csproj"
+              },
+              "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj": {
+                "projectPath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.ViewModels\\linxOne.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[6.6.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
