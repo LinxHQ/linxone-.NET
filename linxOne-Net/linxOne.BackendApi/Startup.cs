@@ -1,21 +1,26 @@
-using FluentValidation.AspNetCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
+using FluentValidation;
 using linxOne.Application.Customer;
 using linxOne.Application.System.User;
 using linxOne.Data.EF;
 using linxOne.Data.Entities;
 using linxOne.Utility.Constants;
-using linxOne.ViewModels.System.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.Collections.Generic;
 
 namespace linxOne.BackendApi
 {
@@ -45,14 +50,10 @@ namespace linxOne.BackendApi
             services.AddTransient<SignInManager<AUser>, SignInManager<AUser>>();
             services.AddTransient<RoleManager<ARoles>, RoleManager<ARoles>>();
             services.AddTransient<IUserService, UserService>();
-            services.AddTransient<ICustomerService, ManagerCustomerService>();
-            //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
-            //services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
 
 
-
-            services.AddControllers()
-                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
+            services.AddControllers();
+                //.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
 
 
             services.AddSwaggerGen(c =>
