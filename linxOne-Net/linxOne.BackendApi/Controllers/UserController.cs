@@ -27,7 +27,7 @@ namespace linxOne.BackendApi.Controllers
 
         [HttpPost("authenticate")]
         [AllowAnonymous]
-        public async Task<IActionResult> Authenticate([FromForm]LoginRequest request)
+        public async Task<IActionResult> Authenticate([FromBody]LoginRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -44,7 +44,7 @@ namespace linxOne.BackendApi.Controllers
         }
         [HttpPost("Register")]
         [AllowAnonymous]
-        public async Task<IActionResult> Register([FromForm] RegisterRequest request)
+        public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -64,5 +64,13 @@ namespace linxOne.BackendApi.Controllers
 
         }
 
+        //http://localhost/api/user/paging?pageIndex=1&pageSize=10&Keyword=""
+         [HttpGet("paging")]
+        public async Task<IActionResult> GetUserPagingRquest([FromQuery]GetUserPagingRequest request)
+        {
+            var user = await _userService.GetUserPaging(request);
+            return Ok(user);
+
+        }
     }
 }
