@@ -101,9 +101,7 @@ namespace linxOne.Application.Customer
                        select c;
             if (!string.IsNullOrEmpty(request.keyword))
             {
-                quey = quey.Where(x => x.Ib_customer_name.ToLower().Contains(request.keyword.ToLower())
-                ||
-                x.Ib_customer_type.ToLower().Contains(request.keyword.ToLower()));
+                quey = quey.Where(x => x.Ib_customer_name.ToLower().Contains(request.keyword));
             }
             int totalRow = await quey.CountAsync();
             var data = await quey.Skip((request.pageIndex - 1) * request.pageSize)
@@ -121,7 +119,7 @@ namespace linxOne.Application.Customer
             //
             var pageViewModel = new PageViewModel<CustomerViewRequest>()
             {
-                TotalRecords = totalRow,
+                TotalRecord = totalRow,
                 Items = data
 
             };

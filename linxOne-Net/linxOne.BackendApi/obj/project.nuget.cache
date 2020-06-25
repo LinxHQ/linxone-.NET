@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XRFvLDs0d7bP+s0xJuvdQIHjYEcVDorrQLvBFKRL3Dkgp0h7edbH7s3TN7aVs6hn/iY5WkzyeepvCyqS77z9YQ==",
+  "dgSpecHash": "igBhZBLtGsFcXlCMt5kdBLVxOPvjhzG7LCxlhhLGWXOIspSsO3s8aZSTjfrfoIi6AtI1EKPHt4oGC5bGZFsAzg==",
   "success": true,
   "projectFilePath": "E:\\LinxOne_27052020\\linxone-.NET\\linxOne-Net\\linxOne.BackendApi\\linxOne.BackendApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phongnv\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
-    "C:\\Users\\phongnv\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.2\\fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
-    "C:\\Users\\phongnv\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.2\\fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\phongnv\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

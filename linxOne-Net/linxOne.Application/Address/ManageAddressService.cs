@@ -84,7 +84,7 @@ namespace linxOne.Application.Address
             var pageViewModel = new PageViewModel<AddressViewRequest>()
             {
 
-                TotalRecords = totalRow,
+                TotalRecord = totalRow,
                 Items = data
 
             };

@@ -27,6 +27,7 @@ E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.Data\bin\Debug\netcoreapp3.
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.Data\bin\Debug\netcoreapp3.1\linxOne.Data.runtimeconfig.dev.json
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.Data\bin\Debug\netcoreapp3.1\linxOne.Data.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.Data\bin\Debug\netcoreapp3.1\linxOne.Data.pdb
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.csprojAssemblyReference.cache
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.csproj.CoreCompileInputs.cache
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.AssemblyInfoInputs.cache
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.Data\obj\Debug\netcoreapp3.1\linxOne.Data.AssemblyInfo.cs
