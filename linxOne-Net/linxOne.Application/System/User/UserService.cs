@@ -1,11 +1,14 @@
 ﻿using linxOne.Data.Entities;
+using linxOne.ViewModel.Common;
 using linxOne.ViewModels.Common;
 using linxOne.ViewModels.System.User;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,16 +60,49 @@ namespace linxOne.Application.System.User
                 _config["Tokens:Issuer"], _config["Tokens:Issuer"],
                 claims,
                 expires: DateTime.Now.AddHours(3), signingCredentials: creds);
-           // var tk = new JwtSecurityTokenHandler().WriteToken(token);
+            // var tk = new JwtSecurityTokenHandler().WriteToken(token);
             //var result = new ApiSuccessResult<string>(new JwtSecurityTokenHandler().WriteToken(token));
             return new ApiSuccessResult<string>(new JwtSecurityTokenHandler().WriteToken(token));
 
+        }
+
+        public async Task<PageViewModel<UserViewRequest>> GetUserPaging(GetUserPagingRequest request)
+        {
+            var q = _userManager.Users;
+            if (!string.IsNullOrEmpty(request.Keyword))
+            {
+                q = q.Where(x => x.UserName.ToLower().Contains(request.Keyword.ToLower())
+                || x.PhoneNumber.ToLower().Contains(request.Keyword.ToLower())
+                || x.Email.ToLower().Contains(request.Keyword.ToLower())
+                );
+            }
+            int totalRow = await q.CountAsync();
+            var data = await q.Skip((request.pageIndex - 1) * request.pageSize)
+                .Take(request.pageSize).Select(c => new UserViewRequest()
+                {
+                    Id = c.Id,
+                    FirstName = c.FirstName,
+                    LastName = c.LastName,
+                    Username = c.UserName,
+                    Birth = c.Birth,
+                    Email = c.Email,
+                    PhoneNumber = c.PhoneNumber
+                }).ToListAsync();
+
+            var pageViewModel = new PageViewModel<UserViewRequest>()
+            {
+                TotalRecords = totalRow,
+                Items = data
+
+            };
+            return pageViewModel;
         }
 
         public async Task<ApiResult<bool>> Register(RegisterRequest request)
         {
             var user = new AUser()
             {
+
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 Birth = request.Birth,

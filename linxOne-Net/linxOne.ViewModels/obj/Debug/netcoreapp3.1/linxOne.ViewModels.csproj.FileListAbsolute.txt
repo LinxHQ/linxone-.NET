@@ -16,9 +16,9 @@ E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\bin\Debug\netcor
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\bin\Debug\netcoreapp3.1\linxOne.Data.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\bin\Debug\netcoreapp3.1\linxOne.Data.pdb
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\obj\Debug\netcoreapp3.1\linxOne.ViewModels.csprojAssemblyReference.cache
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\obj\Debug\netcoreapp3.1\linxOne.ViewModels.csproj.CoreCompileInputs.cache
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\obj\Debug\netcoreapp3.1\linxOne.ViewModels.AssemblyInfoInputs.cache
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\obj\Debug\netcoreapp3.1\linxOne.ViewModels.AssemblyInfo.cs
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\obj\Debug\netcoreapp3.1\linxOne.ViewModels.csproj.CopyComplete
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\obj\Debug\netcoreapp3.1\linxOne.ViewModels.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\obj\Debug\netcoreapp3.1\linxOne.ViewModels.pdb
-E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.ViewModels\obj\Debug\netcoreapp3.1\linxOne.ViewModels.csproj.CoreCompileInputs.cache

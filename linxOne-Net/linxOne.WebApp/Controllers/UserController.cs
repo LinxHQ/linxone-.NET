@@ -14,6 +14,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Http;
+using linxOne.Utility.Constants;
 
 namespace linxOne.WebApp.Controllers
 {
@@ -27,14 +29,31 @@ namespace linxOne.WebApp.Controllers
             _userApi = userApi;
             _configuration = configuration;
         }
-        public IActionResult Index()
+        public async Task<IActionResult>Index(string keyword, int pageIndex = 1,int pageSize = 10)
         {
-            return View();
+            //var ss = HttpContext.Session.GetString("Token");
+            var request = new GetUserPagingRequest()
+            { 
+                Keyword = keyword,
+                pageIndex = pageIndex,
+                pageSize = pageSize
+            };
+            var data = await _userApi.GetUserPaging(request);
+            ViewBag.keyword = keyword;
+            if (TempData["result"] != null)
+            {
+                ViewBag.SuccessMsg = TempData["result"];
+            }
+
+
+
+            return View(data.ResultObj);
         }
         [HttpGet]
         public async Task< IActionResult> Login()
         {
            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
             return View();
         }
         [HttpPost]
@@ -44,23 +63,34 @@ namespace linxOne.WebApp.Controllers
             {
                 return View(ModelState);
             }
-            var token = await _userApi.Authenticate;
+            var token = await _userApi.Authenticate(request);
             if (token.ResultObj==null)
             {
-
+                ModelState.AddModelError("", token.Message);
+                return View();
             }
-            var userPrincipal = this.ValidateToken(token);
+            var userPrincipal = this.ValidateToken(token.ResultObj);
             var authProperties = new AuthenticationProperties
             {
                 ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
                 IsPersistent = false
                  
             };
+            HttpContext.Session.SetString(SystemConstants.AppSettings.Token,token.ResultObj);
             await HttpContext.SignInAsync(
-                CookieAuthenticationDefaults.AuthenticationScheme,userPrincipal, authProperties
-                );
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                userPrincipal,
+                authProperties);
             return RedirectToAction("Index","Home");
         }
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Remove("Token");
+            return RedirectToAction("Login", "User");
+        }
+
         private ClaimsPrincipal ValidateToken(string jwtToken)
         {
             IdentityModelEventSource.ShowPII = true;

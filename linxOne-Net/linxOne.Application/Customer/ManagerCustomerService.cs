@@ -121,7 +121,7 @@ namespace linxOne.Application.Customer
             //
             var pageViewModel = new PageViewModel<CustomerViewRequest>()
             {
-                TotalRecord = totalRow,
+                TotalRecords = totalRow,
                 Items = data
 
             };
