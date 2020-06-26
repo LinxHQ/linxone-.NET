@@ -12,7 +12,8 @@ namespace linxOne.Application.System.User
     {
         Task<ApiResult<string>> Authencate(LoginRequest request);
         Task<ApiResult<bool>> Register(RegisterRequest request);
-        Task<PageViewModel<UserViewRequest>> GetUserPaging(GetUserPagingRequest request);
+        Task<ApiResult<PageViewModel<UserViewRequest>>> GetUserPaging(GetUserPagingRequest request);
+        
 
     }
 }

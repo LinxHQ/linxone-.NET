@@ -66,7 +66,7 @@ namespace linxOne.Application.System.User
 
         }
 
-        public async Task<PageViewModel<UserViewRequest>> GetUserPaging(GetUserPagingRequest request)
+        public async Task<ApiResult<PageViewModel<UserViewRequest>>> GetUserPaging(GetUserPagingRequest request)
         {
             var q = _userManager.Users;
             if (!string.IsNullOrEmpty(request.Keyword))
@@ -92,10 +92,12 @@ namespace linxOne.Application.System.User
             var pageViewModel = new PageViewModel<UserViewRequest>()
             {
                 TotalRecords = totalRow,
+                PageIndex=request.pageIndex,
+                PageSize=request.pageSize,
                 Items = data
 
             };
-            return pageViewModel;
+            return new ApiSuccessResult<PageViewModel<UserViewRequest>>(pageViewModel);
         }
 
         public async Task<ApiResult<bool>> Register(RegisterRequest request)
