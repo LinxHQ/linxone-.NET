@@ -31,7 +31,7 @@ namespace linxOne.WebApp.Controllers
         }
         public async Task<IActionResult>Index(string keyword, int pageIndex = 1,int pageSize = 10)
         {
-           
+            //var ss = HttpContext.Session.GetString("Token");
             var request = new GetUserPagingRequest()
             { 
                 Keyword = keyword,
@@ -44,6 +44,9 @@ namespace linxOne.WebApp.Controllers
             {
                 ViewBag.SuccessMsg = TempData["result"];
             }
+
+
+
             return View(data.ResultObj);
         }
         [HttpGet]
