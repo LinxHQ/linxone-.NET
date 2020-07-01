@@ -52,9 +52,9 @@ namespace linxOne.WebApp.Services
             client.BaseAddress = new Uri(_configuration["BaseAddress"]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", session);
 
-            var response1 = await client.GetAsync($"/api/user/paging?pageIndex=" + $"{request.pageIndex}" +
-                                                                $"&pageSize={request.pageSize}" +
-                                                                $"&Keyword={request.Keyword}");
+            //var response1 = await client.GetAsync($"/api/user/paging?pageIndex=" + $"{request.pageIndex}" +
+            //                                                    $"&pageSize={request.pageSize}" +
+            //                                                    $"&Keyword={request.Keyword}");
 
             var response = await client.GetAsync($"/api/user/paging?pageIndex=" +
                 $"{request.pageIndex}&pageSize={request.pageSize}&Keyword={request.Keyword}");

@@ -262,6 +262,7 @@ E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.WebApp\obj\Debug\netcoreapp
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.WebApp\obj\Debug\netcoreapp3.1\linxOne.WebApp.TagHelpers.input.cache
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.WebApp\obj\Debug\netcoreapp3.1\linxOne.WebApp.TagHelpers.output.cache
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.WebApp\obj\Debug\netcoreapp3.1\linxOne.WebApp.RazorCoreGenerate.cache
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Index.cshtml.g.cs
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
