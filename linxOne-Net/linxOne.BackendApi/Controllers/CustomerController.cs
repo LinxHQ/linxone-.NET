@@ -109,25 +109,6 @@ namespace linxOne.BackendApi.Controllers
             var cus = await _customerService.GetCustomerById(CusId);
             return CreatedAtAction(nameof(GetCustomerById), new { CusId }, cus);
         }
-        [HttpPost("create/test")]
-        public async Task<IActionResult> CreateCustomer1([FromForm]CustomerCreateRequest request)
-        {
-            
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            var cus = await _customerService.Create1(request);
-            if (!cus.IsSuccessed)
-            {
-                return BadRequest(cus);
-
-            }
-            return Ok(cus);
-
-            //var result = await _customerService.GetCustomerById(CusId);
-            //return CreatedAtAction(nameof(GetCustomerById), new { CusId }, cus);
-        }
 
         [HttpPut]
         public async Task<IActionResult> Update([FromForm] CustomerUpdateRequest request)

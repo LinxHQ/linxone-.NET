@@ -3,7 +3,6 @@ using linxOne.Data.Entities;
 using linxOne.Utility.Exceptions;
 using linxOne.ViewModel.Address.DataTransferObject;
 using linxOne.ViewModel.Common;
-using linxOne.ViewModels.Common;
 using linxOne.ViewModels.Contact.DataTransferObject;
 using linxOne.ViewModels.Customer.DataTransferObject;
 using linxOne.ViewModels.Invoice.DatatransferObject;
@@ -15,7 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace linxOne.Application.Customer  
+namespace linxOne.Application.Customer
 {
     public class ManagerCustomerService : ICustomerService
     {
@@ -72,62 +71,6 @@ namespace linxOne.Application.Customer
             return cus.Ib_record_primary_key;
         }
 
-        //public async Task<ApiResult<bool>> Create1(CustomerCreateRequest request)
-        //{
-        //    //var checkSame = db.Ib_customers.FindAsync(request.Ib_customer_name);
-        //    //if (checkSame != null)
-        //    //{
-        //    //    return new ApiErrorResult<bool>("Customer Name already exists!");
-        //    //}
-
-        //    var cus = new Ib_customer()
-        //    {
-
-        //        Ib_customer_name = request.Ib_customer_name,
-        //        Ib_customer_registration = request.Ib_customer_registration,
-        //        Ib_customer_type = request.Ib_customer_type,
-        //        Customer_Address = new List<Ib_address>()
-        //       {
-        //           new Ib_address()
-        //           {
-        //               Ib_customer_address_city =request.Ib_customer_address_city,
-        //               Ib_customer_address_line_1 =request.Ib_customer_address_line_1,
-        //               Ib_customer_address_line_2= request.Ib_customer_address_line_2,
-        //               Ib_customer_address_postal_code=request.Ib_customer_address_postal_code,
-        //               Ib_customer_address_phone_1=request.Ib_customer_address_phone_1,
-        //               Ib_customer_address_phone_2= request.Ib_customer_address_phone_2,
-        //               Ib_customer_address_state=request.Ib_customer_address_state,
-        //               Ib_customer_address_website_url=request.Ib_customer_address_website_url,
-        //         }
-        //        },
-
-        //        Customer_Contact = new List<Ib_customer_contact>()
-        //       {
-
-        //           new Ib_customer_contact()
-        //           {
-        //               Ib_customer_contact_email_1 = request.Ib_customer_contact_email_1,
-        //               Ib_customer_contact_email_2 = request.Ib_customer_contact_email_2,
-        //               Ib_customer_contact_first_name=request.Ib_customer_contact_first_name,
-        //               Ib_customer_contact_last_name = request.Ib_customer_contact_last_name,
-        //               Ib_customer_contact_mobile = request.Ib_customer_contact_mobile,
-        //               Ib_customer_contact_note=request.Ib_customer_contact_note,
-        //               Ib_customer_contact_office_fax = request.Ib_customer_contact_office_fax,
-        //               Ib_customer_contact_office_phone = request.Ib_customer_contact_office_phone
-
-        //           }
-        //       }
-
-        //    };
-        //    var result = await db.Ib_customers.AddAsync(cus);
-        //    await db.SaveChangesAsync();
-        //    if (result != null) 
-        //    {
-        //        new ApiSuccessResult<bool>();
-        //    }
-        //    return new ApiErrorResult<bool>("Create new Customer fail!");
-        //}
-
         public async Task<int> Delete(int customerId)
         {
             var customer = await db.Ib_customers.FindAsync(customerId);
@@ -152,7 +95,7 @@ namespace linxOne.Application.Customer
             return data;
         }
 
-        public async Task<ApiResult<PageViewModel<CustomerViewRequest>>> GetAllPaging(GetCustomerPagingRequest request)
+        public async Task<PageViewModel<CustomerViewRequest>> GetAllPaging(GetCustomerPagingRequest request)
         {
             var quey = from c in db.Ib_customers
                        select c;
@@ -179,12 +122,10 @@ namespace linxOne.Application.Customer
             var pageViewModel = new PageViewModel<CustomerViewRequest>()
             {
                 TotalRecords = totalRow,
-                PageIndex=request.pageIndex,
-                PageSize=request.pageSize,
                 Items = data
 
             };
-            return new ApiSuccessResult<PageViewModel<CustomerViewRequest>>(pageViewModel);
+            return pageViewModel;
         }
 
         public async Task<List<AddressViewRequest>> GetCustomerAddressByCustomerId(int id)
@@ -304,6 +245,5 @@ namespace linxOne.Application.Customer
             return await db.SaveChangesAsync();
         }
 
-        
     }
 }
