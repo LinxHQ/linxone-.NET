@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using FluentValidation.AspNetCore;
 using linxOne.ViewModels.System.User;
 using linxOne.WebApp.Services;
+using linxOne.WebApp.Services.Customer;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,6 +44,7 @@ namespace linxOne.WebApp
             });
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<IUserApi, UserApi>();
+            services.AddTransient<ICustomerApi, CustomerApi>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

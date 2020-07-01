@@ -165,9 +165,6 @@ E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcor
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.csproj.CoreCompileInputs.cache
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.MvcApplicationPartsAssemblyInfo.cs
 E:\LinxOne_12052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\obj\Debug\netcoreapp3.1\linxOne.BackendApi.MvcApplicationPartsAssemblyInfo.cache
-E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\appsettings.json
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -269,6 +266,7 @@ E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcor
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
@@ -297,6 +295,7 @@ E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcor
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
@@ -306,6 +305,7 @@ E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcor
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\linxOne.Application.dll
 E:\LinxOne_27052020\linxone-.NET\linxOne-Net\linxOne.BackendApi\bin\Debug\netcoreapp3.1\linxOne.Data.dll
