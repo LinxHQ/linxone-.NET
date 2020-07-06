@@ -1,5 +1,4 @@
-﻿using linxOne.ViewModel.Common;
-using linxOne.ViewModels.Common;
+﻿using linxOne.ViewModels.Common;
 using linxOne.ViewModels.System.User;
 using System;
 using System.Collections.Generic;
@@ -12,7 +11,6 @@ namespace linxOne.Application.System.User
     {
         Task<ApiResult<string>> Authencate(LoginRequest request);
         Task<ApiResult<bool>> Register(RegisterRequest request);
-        Task<PageViewModel<UserViewRequest>> GetUserPaging(GetUserPagingRequest request);
 
     }
 }

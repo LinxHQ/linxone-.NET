@@ -12,7 +12,6 @@ namespace linxOne.BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _customerService;
@@ -30,8 +29,8 @@ namespace linxOne.BackendApi.Controllers
 
         }
 
-        [HttpGet("paging")]
-        public async Task<IActionResult> GetAllPaging([FromQuery]GetCustomerPagingRequest request)
+        [HttpGet("cus-paging")]
+        public async Task<IActionResult> GetAllPaging([FromForm]GetCustomerPagingRequest request)
         {
 
             var cus = await _customerService.GetAllPaging(request);
@@ -43,7 +42,7 @@ namespace linxOne.BackendApi.Controllers
 
         }
 
-        [HttpGet("address")]
+        [HttpGet("cus/address")]
         public async Task<IActionResult> GetCustomerAddressByCustomerId(int id)
         {
             var data = await _customerService.GetCustomerAddressByCustomerId(id);
@@ -52,8 +51,7 @@ namespace linxOne.BackendApi.Controllers
             return Ok(data);
         }
 
-        [HttpGet("contact")]
-        [Authorize]
+        [HttpGet("cus/contact")]
         public async Task<IActionResult> GetCustomerContactByCustomerId(int id)
         {
             var data = await _customerService.GetCustomerContactByCustomerId(id);
@@ -69,7 +67,7 @@ namespace linxOne.BackendApi.Controllers
 
         }
 
-        [HttpGet("invoice")]
+        [HttpGet("cus/invoice")]
         public async Task<IActionResult> GetCustomerInvoiceByCustomerId(int id)
         {
             var data = await _customerService.GetCustomerInvoiceCustomerId(id);
